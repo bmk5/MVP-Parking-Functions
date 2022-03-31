@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-import java.util.Scanner;
+
 
 /*
 * Given a file consisting of combinations of length n, this class

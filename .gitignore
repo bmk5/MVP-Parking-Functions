@@ -1,2 +1,3 @@
 *.class
+Code\*.class
 __pycache__/

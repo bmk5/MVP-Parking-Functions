@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-import java.util.Scanner;
+
 
 /*
 * This program takes in a file containing outcome maps as input.

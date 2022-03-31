@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-import java.util.Scanner;
+
 
 /*
 * This program takes in a file consisting of outcome maps and their corresponding
@@ -54,7 +54,7 @@ public class EqualCheck{
         System.out.println("Input not provided, check README file for directions");
         System.exit(1);
     }
-    
+
     int num = Integer.parseInt(args[0]);
 
     if (num < 2 || num > 8){
