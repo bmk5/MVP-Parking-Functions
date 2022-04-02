@@ -114,11 +114,22 @@ public class Park_mvp{
          map.put(outcome, map.getOrDefault(outcome,0) + 1);
      }
 
-    //print to stdout
+     //creating the output file
+    File output = new File("../OutcomeMaps/" + "map" + num + ".csv");
+    PrintWriter writer = new PrintWriter(output);
+
+    //write to file
     for (String outcome : map.keySet()){
-      System.out.println(outcome + "," + map.get(outcome));
+      StringBuilder sb = new StringBuilder();
+      int size = map.get(outcome);
+      sb.append(outcome);
+      sb.append(",");
+      sb.append(size);
+      sb.append("\n");
+      writer.write(sb.toString());
     }
 
+    writer.close();
  }
 
 }
