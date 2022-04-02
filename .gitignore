@@ -1,4 +1,4 @@
 *.class
 Code\*.class
-Results_Excel\*~
+Results_Excel\*.~
 __pycache__\
