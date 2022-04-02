@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.*;
-import java.io.File;
+import java.io.*;
 
 /*
 * This program takes in parking functions as inputs.
@@ -88,10 +88,22 @@ public class Park_Classic{
          map.put(outcome, map.getOrDefault(outcome,0) + 1);
      }
 
-     //print to stdout
-     for (String outcome : map.keySet()){
-       System.out.println(outcome + "," + map.get(outcome));
-     }
+     //creating the output file
+    File output = new File("../ClassicOutMaps/" + "map" + num + ".csv");
+    PrintWriter writer = new PrintWriter(output);
+
+    //write to file
+    for (String outcome : map.keySet()){
+      StringBuilder sb = new StringBuilder();
+      int size = map.get(outcome);
+      sb.append(outcome);
+      sb.append(",");
+      sb.append(size);
+      sb.append("\n");
+      writer.write(sb.toString());
+    }
+
+    writer.close();
   }
 
 }
