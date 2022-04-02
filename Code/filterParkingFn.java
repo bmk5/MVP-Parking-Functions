@@ -61,7 +61,7 @@ public class filterParkingFn{
     Scanner scanner = new Scanner(myobj);
 
     //creating the output file
-    File output = new File("pf" + num + ".txt");
+    File output = new File("../MVPPF/" + "pf" + num + ".txt");
     FileWriter writer = new FileWriter(output);
 
 
