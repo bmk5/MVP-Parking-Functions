@@ -159,7 +159,7 @@ public class PatternCheck{
     int [] outcome = new int[map.length()];
 
     for (int i = 0; i < map.length() ;i++ ) {
-       outcome[i] = Integer.parseInt(String.valueOf(map.charAt(i)) );
+       outcome[i] = Integer.parseInt(String.valueOf(map.charAt(i)));
     }
 
      return !subDecreasing(outcome) && !subOther(outcome);
@@ -167,24 +167,44 @@ public class PatternCheck{
 
 
   public static void main(String[] args) throws Exception {
-    File myobj = new File(args[0]);
+    if (args.length == 0){
+        System.out.println("Input not provided, check README file for directions");
+        System.exit(1);
+    }
+    int num = Integer.parseInt(args[0]);
+
+    if (num < 2 || num > 8){
+      System.out.println("Input must be greater than 1 and less than 9,check README file for directions");
+      System.exit(1);
+    }
+
+    // the corresponding file that contains outcome maps of length num
+    String filename = "../MVPOutMaps/map" + num + ".csv";
+    File myobj = new File(filename);
     Scanner scanner = new Scanner(myobj);
     int count = 0;
 
+    //output file
+    File output = new File("../PrefIndependence maps/" + "sizesEqual" + num + ".txt");
+    FileWriter writer = new FileWriter(output);
+
     while (scanner.hasNextLine()) {
-      try{
+
         String data = scanner.nextLine();
         String [] arr = data.split(",");
         String map = arr[0];
 
-        if (checkPattern(map)) count++;
 
-      } catch(Exception e){
-       System.out.println("Problem!");
-     }
+        if (checkPattern(map)) {
+          writer.write(map);
+          writer.write("\n");
+          writer.flush();
+          count++;
+        }
+
    }
-
-    System.out.println(count);
+    writer.close();
+    System.out.println("TOTAL:" + count);
   }
 
 }

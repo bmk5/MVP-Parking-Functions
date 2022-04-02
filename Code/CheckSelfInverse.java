@@ -48,7 +48,7 @@ public class CheckSelfInverse{
     }
 
     //fetching the associated file
-    String filename = "../OutcomeMaps/map" + num + ".csv";
+    String filename = "../MVPOutMaps/map" + num + ".csv";
     File myobj = new File(filename);
     Scanner scanner = new Scanner(myobj);
 

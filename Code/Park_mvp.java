@@ -115,7 +115,7 @@ public class Park_mvp{
      }
 
      //creating the output file
-    File output = new File("../OutcomeMaps/" + "map" + num + ".csv");
+    File output = new File("../MVPOutMaps/" + "map" + num + ".csv");
     PrintWriter writer = new PrintWriter(output);
 
     //write to file
