@@ -106,3 +106,9 @@ This program checks and counts which outcome maps in *S_n* avoid the patterns *3
                      ![](/Snippets/pattern.png)
                    </p>
 Implies that we check which outcome maps in *S_5* avoid *321* and *3412*. We see that the total is *34*. The resultant file is stored in the *PrefIndependence maps* folder as *sizesEqual5.txt*.  
+
+#### *mvp.py* ####
+This program works just like **Park_mvp.java**. The only difference is that this program takes a preference vector as an input and spits out the resultant outcome map as output. For instance:
+                   <p align="center">
+                     ![](/Snippets/mvp_py.png)
+                   </p>
