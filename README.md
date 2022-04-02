@@ -43,4 +43,22 @@ You can keep running the program as many times as you want. You do not need to c
 
 #### *drawpath.py* ####
 This program builds a lattice path from a preference vector provided as input from the terminal. The program is written in python. Python is a bit different from java in that all the steps shown before can be done in one step as follows. Suppose we want the lattice path that corresponds to *1133*, then we type:
+                  <p align="center">
+                       ![](/Snippets/draw.png)
+                  </p>
+Since we expect a graphic, a pop-up window will appear with the resultant lattice path as shown:
+                   <p align="center">
+                       ![](/Snippets/example2.png)
+                  </p>
+To run the program again with a different input, you will need to close the pop-up window, then type the command again.
+
+#### *EqualCheck.java* ####
+This program essentially checks to see which outcome maps in *S_n* attain preference independence. It outputs the total number that attain preference independence. It takes a single input *n* corresponding to *S_n*. For example:
+                     <p align="center">
+                       ![](/Snippets/equal.png)
+                    </p>
+The input *5* implies that we want all the outcome maps in *S_5* that attain preference independence. The input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error as shown below:
+                     <p align="center">
+                       ![](/Snippets/error1.png)
+                    </p>
 
