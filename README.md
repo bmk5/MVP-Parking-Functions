@@ -57,10 +57,11 @@ This program essentially checks to see which outcome maps in *S_n* attain prefer
                      <p align="center">
                        ![](/Snippets/equal.png)
                     </p>
+                     
 The input *5* implies that we want all the outcome maps in *S_5* that attain preference independence. The input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error as shown below:
                      <p align="center">
                        ![](/Snippets/error1.png)
-                    </p>
+                     </p>
 
 #### *filterParkingFn.java* ####
 This program 'filters' out all the MVP parking functions from all possible combinations from the set \{1,2,...,n\}. The output is a file, whose name is *pf_n.txt*. The file contains all the 'filtered' out MVP parking functions and is written to the *MVPPF* directory. For example, running:
