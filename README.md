@@ -3,22 +3,28 @@ CONTENTS OF THIS FILE
 ---------------------
 
  * Introduction
- * Directories
-    * ClassicOutMaps 
+ * Directories 
     * Combinations
+    * ClassicOutMaps
     * InvolutionsData
     * MVPPF
     * MVPOutMaps
     * PrefIndependence maps
     * Results_Excel
+    * Snippets
     * Code
  * Program Files and use
 
+DIRECTORIES
+---------------------
+### Combinations ###
+The files in this directory represent all possible *n* letter combinations of a set *\{1,2,...,n\}*. For example, *combos4.txt* contains all possible *4* letter combinations of the set *\{1,2,...,4\}*
 
+### ClassicOutMaps ###
+This directory contains files of outcome maps under the classical parking rule,each grouped by length. For example, *maps6.csv* contains all outcome maps of length *6* under the classical parking rule
 
-
-
-
+### InvolutionsData ###
+Each file in this directory contains permutations in *S_n* that are their own self inverse. For example, *selfInverse5.txt* contains all those permutations in *S_5* that are their own inverses.
 
 PROGRAM FILES AND USE
 ---------------------
@@ -79,11 +85,11 @@ This program takes in an outcome map as input, and outputs all the preference ve
 As in the program prior, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
 
 #### *CheckSelfInverse.java* ####
-This program counts how many of the outcome maps in *S_n* are their own inverses, and returns the total count. The input to this program is a single integer corresponding to *n*. For example:
+This program checks and counts how many of the outcome maps in *S_n* are their own inverses, and prints out the total count. Further, it also writes that to a corresponding text file in the *InvolutionsData* folder. The input to this program is a single integer corresponding to *n*. For example:
                     <p align="center">
                        ![](/Snippets/inverse.png)
                     </p>
-This says that we count all the outcome maps in *S_6* that are their own self inverses.Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
+This says that we count all the outcome maps in *S_6* that are their own self inverses. It prints out the output and the resultant file is stored in the *InvolutionsData* folder as *selfInverse6.txt*. Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
 
 
 #### *Park_mvp.java* ####
