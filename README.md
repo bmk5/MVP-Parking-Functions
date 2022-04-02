@@ -62,3 +62,9 @@ The input *5* implies that we want all the outcome maps in *S_5* that attain pre
                        ![](/Snippets/error1.png)
                     </p>
 
+#### *filterParkingFn.java* ####
+This program 'filters' out all the MVP parking functions from all possible combinations from the set \{1,2,...,n\}. The output is a file, whose name is *pf_n.txt*. The file contains all the 'filtered' out MVP parking functions and is written to the *MVPPF* directory. For example, running:
+                     <p align="center">
+                       ![](/Snippets/filter.png)
+                    </p>
+creates a new file: *pf5.txt* containing all the MVP parking functions of length *5*
