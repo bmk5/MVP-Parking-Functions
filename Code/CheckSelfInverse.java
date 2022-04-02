@@ -54,6 +54,9 @@ public class CheckSelfInverse{
 
     int count = 0;
 
+    File output = new File("../InvolutionsData/" + "selfInverse" + num + ".txt");
+    FileWriter writer = new FileWriter(output);
+
     //reading the file line by line
     // Note that the file is a csv file, each line consists of two comma separated values
     // The first value is the outcome map, and the second is the size of the outcome map
@@ -65,7 +68,12 @@ public class CheckSelfInverse{
          String outcome = arr[0];
          String inverse = findInverse(outcome);
 
-         if (inverse.equals(outcome)) count++;
+         if (inverse.equals(outcome)) {
+           writer.write(outcome);
+           writer.write("\n");
+           writer.flush();
+           count++;
+         }
 
      }
 
