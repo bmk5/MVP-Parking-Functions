@@ -33,3 +33,6 @@ With this, we have compiled the program. Ensure that a *buildMatrix.class* file 
                        ![](/Snippets/build.png)
                   </p>
 Notice that there are spaces between the three pieces of text. That is important otherwise an error occurs. Hitting enter should output the following:
+                   <p align="center">
+                       ![](/Snippets/output1.png)
+                  </p>
