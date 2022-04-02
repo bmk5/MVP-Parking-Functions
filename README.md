@@ -11,24 +11,47 @@ CONTENTS OF THIS FILE
     * MVPOutMaps
     * PrefIndependence maps
     * Results_Excel
-    * Snippets
     * Code
+    * Snippets
  * Program Files and use
+
+
+INTRODUCTION
+---------------------
+This project consists of the data acquired and generated throughout the lifetime of the project. It consists of 8 data folders and one folder containing the code used for this project. Kindly **DO NOT** change the names of the files in this directory, or change their locations. The programs used in this project have been constructed to work within this directory structure, therefore tampering with any name or location of any file or directory may lead to unwanted behaviour. 
 
 DIRECTORIES
 ---------------------
-### Combinations ###
+#### Combinations ####
 The files in this directory represent all possible *n* letter combinations of a set *\{1,2,...,n\}*. For example, *combos4.txt* contains all possible *4* letter combinations of the set *\{1,2,...,4\}*
 
-### ClassicOutMaps ###
-This directory contains files of outcome maps under the classical parking rule,each grouped by length. For example, *maps6.csv* contains all outcome maps of length *6* under the classical parking rule
+#### ClassicOutMaps ####
+This directory contains files of outcome maps under the classical parking rule,each grouped by length. For example, *maps6.csv* contains all outcome maps of length *6* under the classical parking rule.
 
-### InvolutionsData ###
+#### InvolutionsData ####
 Each file in this directory contains permutations in *S_n* that are their own self inverse. For example, *selfInverse5.txt* contains all those permutations in *S_5* that are their own inverses.
+
+#### MVPPF ####
+Each file in this directory contains parking functions of length *n*. For example, *pf8.txt* contains all parking functions of length *8*.
+
+#### MVPOutMaps ####
+This directory contains files of outcome maps under the MVP parking rule,each grouped by length. For example, *maps4.csv* contains all outcome maps of length *4* under the MVP parking rule.
+
+#### PrefIndependence maps ####
+The files in this directory represent  permutations in *S_n* that avoid the patterns *321* and *3412*. For example, *sizesEqual5.txt* contains all permutations in *S_5* that avoid the above patterns.
+
+#### Results_Excel ####
+These files are exactly similar to those in the **MVPOutMaps** folder. Only difference is that these files are in excel format while those in the **MVPOutMaps** folder are in csv format.
+
+#### Snippets ####
+This directory contains images used in the README file. 
+
+#### Code ####
+This directory contains the programs used in the lifetime of this project. In the next section, we explore these programs and how to execite them.
 
 PROGRAM FILES AND USE
 ---------------------
-As stated before, in this section we explore the programs in the *Code* directory and how to use them. Most of these programs have been written in Java and a few in python. You do not need to have any prior experience in programming as we explain in detail how the code is used. However, if you do want to understand more about the code, you are free to do that, as the code is (I hope) well documented. Before we start, you'll need to open your terminal(Linux) or Command Prompt(Windows). From there you will need to navigate to the MVP-Parking-Functions directory, from where you'll go into the Code directory where all these programs are located. To learn how to navigate within the terminal, take a look at this short 4-minute tutorial: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=xp6oHaStwww">Terminal Navigation in Linux</a>. For Windows users, I'd suggest watching the Linux tutorial, since there are a lot of similarities there, then this: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=7ABkcHLdG_A">Terminal Navigation in Windows</a>.
+As stated before, in this section we explore the programs in the *Code* directory and how to execute them. Most of these programs have been written in Java and a few in python. You do not need to have any prior experience in programming as we explain in detail how the code is used. However, if you do want to understand more about the code, you are free to do that, as the code is (I hope) well documented. Before we start, you'll need to open your terminal(Linux) or Command Prompt(Windows). From there you will need to navigate to the MVP-Parking-Functions directory, from where you'll go into the Code directory where all these programs are located. To learn how to navigate within the terminal, take a look at this short 4-minute tutorial: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=xp6oHaStwww">Terminal Navigation in Linux</a>. For Windows users, I'd suggest watching the Linux tutorial, since there are a lot of similarities there, then this: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=7ABkcHLdG_A">Terminal Navigation in Windows</a>.
 
 #### *buildMatrix.java* ####
 This program is used to build a matrix from a preference vector provided as input from the terminal. That is to say, **YOU** provide the input. Using this program as an example, we show how to do that. Before running any program, we always need to *compile* it. You do not need to understand what this means, just that you have to do it before running a program. We use the above program as an example. To do so, type the following in your terminal or command prompt:
