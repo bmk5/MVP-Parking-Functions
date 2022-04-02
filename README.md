@@ -26,5 +26,5 @@ As stated before, in this section we explore the programs in the *Code* director
 #### *buildMatrix.java* ####
 This program is used to build a matrix from a preference vector provided as input from the terminal. That is to say, **YOU** provide the input. Using this program as an example, we show how to do that. Before running any program, we always need to *compile* it. You do not need to understand what this means, just that you have to do it before running a program. We use the above program as an example. To do so, type the following in your terminal
                   <p align="center">
-                       <span style="font-family: 'Lucida Console';">foo</span>
+                       <span style="font-family: 'Garamond'">foo</span>
                   </p>
