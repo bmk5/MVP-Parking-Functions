@@ -4,10 +4,11 @@ CONTENTS OF THIS FILE
 
  * Introduction
  * Directories
+    * ClassicOutMaps 
     * Combinations
     * InvolutionsData
     * MVPPF
-    * OutcomeMaps
+    * MVPOutMaps
     * PrefIndependence maps
     * Results_Excel
     * Code
@@ -86,8 +87,22 @@ This says that we count all the outcome maps in *S_6* that are their own self in
 
 
 #### *Park_mvp.java* ####
-This program parks all the parking functions of length *n*, keeping track of the outcome maps and their sizes, and writes that to a corresponding csv file in the *OutcomeMaps* folder. For example, running:
+This program parks all the parking functions of length *n* according to the MVP parking rule. It keeps track of the outcome maps and their sizes, and writes that to a corresponding csv file in the *MVPOutMaps* folder. For example, running:
                   <p align="center">
                      ![](/Snippets/mvp.png)
                   </p>
-implies that we should park all the parking functions of length 4. The resultant file is stored in the *OutcomeMaps* folder as *map4.csv*. Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
+implies that we should park all the parking functions of length 4 under the MVP rule. The resultant file is stored in the *MVPOutMaps* folder as *map4.csv*. Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
+
+#### *Park_classic.java* ####
+This program parks all the parking functions of length *n* according to the Classical parking rule. It keeps track of the outcome maps and their sizes, and writes that to a corresponding csv file in the *ClassicOutMaps* folder. For example, running:
+                  <p align="center">
+                     ![](/Snippets/classic.png)
+                  </p>
+implies that we should park all the parking functions of length 7 under the classical rule. The resultant file is stored in the *ClassicOutMaps* folder as *map7.csv*. Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
+
+#### *PatternCheck.java* ####
+This program checks and counts which outcome maps in *S_n* avoid the patterns *321* and *3412*. The input is a single integer corresponding to *n*.It writes those that avoid the patterns into the *PrefIndependence maps* directory. For instance: 
+                   <p align="center">
+                     ![](/Snippets/pattern.png)
+                   </p>
+Implies that we check which outcome maps in *S_5* avoid *321* and *3412*. We see that the total is *34*. The resultant file is stored in the *PrefIndependence maps* folder as *sizesEqual5.txt*.  
