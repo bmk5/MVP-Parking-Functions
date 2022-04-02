@@ -38,5 +38,5 @@ Notice that there are spaces between the three pieces of text. That is important
                   </p>
 You can keep running the program as many times as you want. You do not need to compile the program each time you want to run it unless you have changed the code.
                    <p align="center">
-                       ![](/Snippets/example1.png)
+                       ![](/Snippets/examples1.png)
                   </p>
