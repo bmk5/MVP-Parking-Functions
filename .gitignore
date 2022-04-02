@@ -1,4 +1,4 @@
 *.class
 Code\*.class
-Results_Excel/*~
-__pycache__/
+Results_Excel\*~
+__pycache__\
