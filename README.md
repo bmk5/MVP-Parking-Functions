@@ -75,5 +75,11 @@ This program takes in an outcome map as input, and outputs all the preference ve
                      <p align="center">
                        ![](/Snippets/prefVectors.png)
                     </p>
+As in the program prior, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
 
-#### *getPrefVector.java* ####
+#### *CheckSelfInverse.java* ####
+This program counts how many of the outcome maps in *S_n* are their own inverses, and returns the total count. The input to this program is a single integer corresponding to *n*. For example:
+                    <p align="center">
+                       ![](/Snippets/inverse.png)
+                    </p>
+This says that we count all the outcome maps in *S_6* that are their own self inverses.Again, the input to the program can only be an integer ranging from 2-8 inclusive. Any other input results in error.
