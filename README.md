@@ -28,7 +28,7 @@ This program is used to build a matrix from a preference vector provided as inpu
                   <p align="center">
                        ![](/Snippets/compile1.png)
                   </p>
-With this, we have compiled the program. Ensure that a *buildMatrix.class* file has newly popped up among the files in yuor directory. From there, we can now run our program. Suppose I want the matrix associated with the preference vector *1122*, then, we type the following in the terminal:
+With this, we have compiled the program. **ENSURE** that a *buildMatrix.class* file has newly popped up among the files in your directory. The *.class* file is very important to the program, without it, you cannot run your program. We can now run our program. Suppose I want the matrix associated with the preference vector *1122*, then, we type the following in the terminal:
                    <p align="center">
                        ![](/Snippets/build.png)
                   </p>
@@ -52,7 +52,7 @@ Since we expect a graphic, a pop-up window will appear with the resultant lattic
                   </p>
 To run the program again with a different input, you will need to close the pop-up window, then type the command again.
 
-#### *EqualCheck.java* ####
+#### *PrefIndependenceCheck.java* ####
 This program essentially checks to see which outcome maps in *S_n* attain preference independence. It outputs the total number that attain preference independence. It takes a single input *n* corresponding to *S_n*. For example:
                      <p align="center">
                        ![](/Snippets/equal.png)
@@ -67,4 +67,12 @@ This program 'filters' out all the MVP parking functions from all possible combi
                      <p align="center">
                        ![](/Snippets/filter.png)
                     </p>
-creates a new file: *pf5.txt* containing all the MVP parking functions of length *5*
+creates a new file: *pf5.txt* in the *MVPPF* folder containing all the MVP parking functions of length *5*. If one already exists, the program overwrites it, so no need to worry about redundant files.
+
+#### *getPrefVector.java* ####
+This program takes in an outcome map as input, and outputs all the preference vectors that map to the given outcome map. For example, suppose I want to know all the preference vectors that map to *431625*:
+                     <p align="center">
+                       ![](/Snippets/prefVectors.png)
+                    </p>
+
+#### *getPrefVector.java* ####
