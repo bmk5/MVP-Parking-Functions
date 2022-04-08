@@ -1,6 +1,8 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 /*
 * The program below is used to obtain all parking functions that map
@@ -42,15 +44,14 @@ public class getPrefVector{
     String filename = "../MVPPF/pf" + perm.length() + ".txt";
 
     Scanner scanner =  new Scanner( new BufferedReader( new FileReader(filename)));
-    Park_mvp parkMvp = new Park_mvp();
-
+  
     //find the parking functions that map to the above outcome map
     while (scanner.hasNext()) {
        String data = scanner.next();
-       String result = parkMvp.park_mvp(data);
+       String result = Park_mvp.park_mvp(data);
         if (perm.equals(result)) System.out.println(data);
     }
-
+    scanner.close();
   }
 
 

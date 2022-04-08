@@ -203,6 +203,7 @@ public class PatternCheck{
         }
 
    }
+    scanner.close();
     writer.close();
     System.out.println("TOTAL:" + count);
   }

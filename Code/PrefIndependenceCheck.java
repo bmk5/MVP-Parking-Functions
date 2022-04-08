@@ -82,7 +82,7 @@ public class PrefIndependenceCheck{
        if (equalProduct(outcome,size)) count++;
 
     }
-
+    scanner.close();
     System.out.println("TOTAL:" + count);
   }
 }

@@ -1,6 +1,7 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.TreeMap;
 
 /*
 * This program takes in parking functions as inputs.
@@ -18,7 +19,6 @@ public class Park_Classic{
   * that is, the outcome map, according to the classical parking rule
   */
   public static String park_classical(String data){
-     Park_mvp parking = new Park_mvp();
 
      // representation of the preference vector as an array
      int [] p_vector = new int[data.length()];
@@ -28,7 +28,7 @@ public class Park_Classic{
 
      // initializing our outcome map
      int [] result = new int[p_vector.length];
-     parking.init_array(result);
+      Park_mvp.init_array(result);
 
 
      for (int i = 0; i < p_vector.length ;i++ ) {
@@ -39,7 +39,7 @@ public class Park_Classic{
           result[spot] = i+1;
         }
         else{//otherwise we look for the next empty spot
-          int empty = parking.findSpot(result,spot);
+          int empty = Park_mvp.findSpot(result,spot);
 
           // if no spot exists, then the given string is not a parking function
           if (empty < 0)  return null;
@@ -87,7 +87,7 @@ public class Park_Classic{
 
          map.put(outcome, map.getOrDefault(outcome,0) + 1);
      }
-
+     scanner.close();
      //creating the output file
     File output = new File("../ClassicOutMaps/" + "map" + num + ".csv");
     PrintWriter writer = new PrintWriter(output);

@@ -1,4 +1,5 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /*
@@ -74,7 +75,8 @@ public class CheckSelfInverse{
            writer.flush();
            count++;
          }
-
+         scanner.close();
+         writer.close();
      }
 
      System.out.println("TOTAL:" + count);

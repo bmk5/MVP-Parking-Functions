@@ -1,5 +1,7 @@
-import java.util.*;
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.Arrays;
+import java.util.Scanner;
 
 
 /*
@@ -75,7 +77,7 @@ public class filterParkingFn{
            writer.flush();
          }
    }
-
+   scanner.close();
    writer.close();
   }
 
