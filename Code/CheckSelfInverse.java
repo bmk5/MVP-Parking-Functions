@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /*
@@ -15,7 +16,7 @@ public class CheckSelfInverse{
   * This method takes in an outcome map as input, and returns the inverse
   * of the given outcome map.
   */
-  public static String findInverse(String data){
+  public static String findInverseOfMap(String data){
     //transform the string into an array
     int [] arr = new int[data.length()];
      for (int i = 0; i < data.length() ;i++ ) {
@@ -32,21 +33,13 @@ public class CheckSelfInverse{
 
      return sb.toString();
   }
-
-  public static void main(String[] args) throws Exception{
-    //check to see that there exists input
-    if (args.length == 0){
-        System.out.println("Input not provided, check README file for directions");
-        System.exit(1);
-    }
-
-    int num = Integer.parseInt(args[0]);
-
-    //input must be valid
-    if (num < 2 || num > 8){
-      System.out.println("Input must be greater than 1 and less than 9,check README file for directions");
-      System.exit(1);
-    }
+  
+  /*
+   * This method takes in a number as a parameter.
+   * It sources the associated file with that number and reads each line of the file
+   * to ascertain the outcome maps that are self inverses.
+   */
+  public static void readOutcomeMapsFromFile(int num) throws IOException {
 
     //fetching the associated file
     String filename = "../MVPOutMaps/map" + num + ".csv";
@@ -67,7 +60,7 @@ public class CheckSelfInverse{
 
          //we only need the outcome map
          String outcome = arr[0];
-         String inverse = findInverse(outcome);
+         String inverse = findInverseOfMap(outcome);
 
          if (inverse.equals(outcome)) {
            writer.write(outcome);
@@ -80,5 +73,24 @@ public class CheckSelfInverse{
      }
 
      System.out.println("TOTAL:" + count);
+    
+  }
+  public static void main(String[] args) throws Exception{
+    //check to see that there exists input
+    if (args.length == 0){
+        System.out.println("Input not provided, check README file for directions");
+        System.exit(1);
+    }
+
+    int num = Integer.parseInt(args[0]);
+
+    //input must be valid
+    if (num < 2 || num > 8) {
+      System.out.println("Input must be greater than 1 and less than 9,check README file for directions");
+      System.exit(1);
+    }
+    
+    readOutcomeMapsFromFile(num);
+    
   }
 }

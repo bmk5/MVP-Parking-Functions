@@ -4,12 +4,12 @@
 * as the output
 */
 
-public class buildMatrix{
+public class BuildMatrix{
 
   /*
   * this function constructs the matrix and outputs it to the console
   */
-  public static void build(String pf){
+  public static void buildMatrix(String pf){
     int size = pf.length();
     int [][] matrix = new int [size][size];
 
@@ -32,12 +32,13 @@ public class buildMatrix{
 
 
   public static void main(String[] args) {
+    //check that input is provided
     if (args.length == 0){
         System.out.println("Input not provided, check README file for directions");
         System.exit(1);
     }
     
-    build(args[0]);
+    buildMatrix(args[0]);
   }
 
 }
