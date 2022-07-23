@@ -3,3 +3,4 @@ Code/*.class
 Code/ParkingFunction.java
 Code/OutcomeMap.java
 __pycache__/
+.vscode/
