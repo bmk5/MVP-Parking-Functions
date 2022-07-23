@@ -53,12 +53,12 @@ PROGRAM FILES AND USE
 ---------------------
 As stated before, in this section we explore the programs in the *Code* directory and how to execute them. Most of these programs have been written in Java and a few in python. You do not need to have any prior experience in programming as we explain in detail how the code is used. However, if you do want to understand more about the code, you are free to do that, as the code is (I hope) well documented. Before we start, you'll need to open your terminal(Linux) or Command Prompt(Windows). From there you will need to navigate to the MVP-Parking-Functions directory, from where you'll go into the Code directory where all these programs are located. To learn how to navigate within the terminal, take a look at this short 4-minute tutorial: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=xp6oHaStwww">Terminal Navigation in Linux</a>. For Windows users, I'd suggest watching the Linux tutorial, since there are a lot of similarities there, then this: <a taget="_blank" title="hello" href="https://www.youtube.com/watch?v=7ABkcHLdG_A">Terminal Navigation in Windows</a>.
 
-#### *buildMatrix.java* ####
+#### *BuildMatrix.java* ####
 This program is used to build a matrix from a preference vector provided as input from the terminal. That is to say, **YOU** provide the input. Using this program as an example, we show how to do that. Before running any program, we always need to *compile* it. You do not need to understand what this means, just that you have to do it before running a program. We use the above program as an example. To do so, type the following in your terminal or command prompt:
                   <p align="center">
                        ![](/Snippets/compile1.png)
                   </p>
-With this, we have compiled the program. **ENSURE** that a *buildMatrix.class* file has newly popped up among the files in your directory. The *.class* file is very important to the program, without it, you cannot run your program. We can now run our program. Suppose I want the matrix associated with the preference vector *1122*, then, we type the following in the terminal:
+With this, we have compiled the program. **ENSURE** that a *BuildMatrix.class* file has newly popped up among the files in your directory. The *.class* file is very important to the program, without it, you cannot run your program. We can now run our program. Suppose I want the matrix associated with the preference vector *1122*, then, we type the following in the terminal:
                    <p align="center">
                        ![](/Snippets/build.png)
                   </p>
@@ -93,14 +93,14 @@ The input *5* implies that we want all the outcome maps in *S_5* that attain pre
                        ![](/Snippets/error1.png)
                      </p>
 
-#### *filterParkingFn.java* ####
+#### *FilterParkingFunctions.java* ####
 This program 'filters' out all the MVP parking functions from all possible combinations from the set \{1,2,...,n\}. The output is a file, whose name is *pf_n.txt*. The file contains all the 'filtered' out MVP parking functions and is written to the *MVPPF* directory. For example, running:
                      <p align="center">
                        ![](/Snippets/filter.png)
                     </p>
 creates a new file: *pf5.txt* in the *MVPPF* folder containing all the MVP parking functions of length *5*. If one already exists, the program overwrites it, so no need to worry about redundant files.
 
-#### *getPrefVector.java* ####
+#### *GetPreferenceVectors.java* ####
 This program takes in an outcome map as input, and outputs all the preference vectors that map to the given outcome map. For example, suppose I want to know all the preference vectors that map to *431625*:
                      <p align="center">
                        ![](/Snippets/prefVectors.png)
